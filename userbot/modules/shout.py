@@ -1,8 +1,8 @@
-from telegram import Update, Bot
-from telegram.ext import run_async
+from telethon import Update, Bot
+from telethon.ext import run_async
 
-from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot import dispatcher
+from userbot import DisableAbleCommandHandler
+from userbot import dispatcher
 
 @register(outgoing=True, pattern="^.shout$")
 def shout(bot: Bot, update: Update, args):
